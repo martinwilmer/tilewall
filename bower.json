@@ -1,0 +1,20 @@
+{
+	"name": "jquery.tilewall",
+	"version": "0.1",
+	"homepage": "http://martinwilmer.de/tilewall",
+	"authors": [
+		"Martin Wilmer <hello@martinwilmer.com>"
+	],
+	"description": "A jQuery Plugin for the dynamically positioning of tiles in a responsive grid.",
+	"main": "src/jquery.tilewall.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"grid",
+	  	"tiles",
+	  	"jquery-grid",
+		"jquery-tiles",
+		"jquery-tilewall"
+	],
+	"license": "MIT"
+}

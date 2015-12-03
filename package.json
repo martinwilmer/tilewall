@@ -1,0 +1,36 @@
+{
+  "name": "jquery.tilewall",
+  "version": "0.0.1",
+  "description": "A jQuery Plugin for the dynamically positioning of tiles in a responsive grid.",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "grid",
+    "tiles",
+    "jquery-grid",
+    "jquery-tiles",
+    "jquery-tilewall"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinwilmer/jquery.tilewall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martinwilmer/jquery.tilewall/issues"
+  },
+  "author": {
+    "name": "Martin Wilmer",
+    "email": "hello@martinwilmer.com",
+    "url": "http://martinwilmer.com"
+  },
+  "homepage": "http://martinwilmer.com/tilewall",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

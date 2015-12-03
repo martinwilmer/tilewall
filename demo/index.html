@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>jQuery Tile Wall Demo</title>
+		<style>
+			#tile-wall {
+				max-width: 1660px;
+				margin: auto;
+			}
+			.tile {
+				background: #ddd;
+				opacity: 0.8;
+			}
+
+			.tile-nav {
+				background: darkblue;
+				color: white;
+			}
+
+			.tile-fixed {
+				background: darkgreen;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tile-wall">
+			<div class="tile tile-fixed" data-width="1" data-height="1" data-position-x="1" data-position-y="2">w1 h1 pos1/2</div>
+			<div class="tile tile-fixed" data-width="2" data-height="2" data-position-x="8" data-position-y="1">w2 h2 pos8/1</div>
+			<div class="tile tile-fixed" data-width="1" data-height="2" data-position-x="4" data-position-y="3">w1 h2 pos4/3</div>
+
+			<div class="tile tile-nav" data-width="1" data-height="1" data-nav="1">w1 h1 nav</div>
+			<div class="tile tile-nav" data-width="2" data-height="1" data-nav="1">w1 h1 nav</div>
+			<div class="tile tile-nav" data-width="2" data-height="1" data-nav="1">w2 h1 nav</div>
+			<div class="tile tile-nav" data-width="1" data-height="2" data-nav="1">w1 h2 nav</div>
+			<div class="tile tile-nav" data-width="1" data-height="1" data-nav="1">w1 h1 nav</div>
+			<div class="tile tile-nav" data-width="2" data-height="2" data-nav="1">w2 h2 nav</div>
+
+			<div class="tile" data-width="1" data-height="1" data-priority="1">w1 h1 p1</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="2">w1 h1 p2</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="3">w1 h1 p3</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="4">w1 h1 p4</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="5">w1 h1 p5</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="1">w1 h1 p1</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="2">w1 h1 p2</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="3">w1 h1 p3</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="4">w1 h1 p4</div>
+			<div class="tile" data-width="1" data-height="1" data-priority="5">w1 h1 p5</div>
+			<div class="tile" data-width="2" data-height="1" data-priority="1">w2 h1 p1</div>
+			<div class="tile" data-width="2" data-height="1" data-priority="2">w2 h1 p2</div>
+			<div class="tile" data-width="2" data-height="1" data-priority="3">w2 h1 p3</div>
+			<div class="tile" data-width="3" data-height="1" data-priority="4">w3 h1 p4</div>
+			<div class="tile" data-width="3" data-height="1" data-priority="5">w3 h1 p5</div>
+			<div class="tile" data-width="3" data-height="1" data-priority="1">w3 h1 p1</div>
+			<div class="tile" data-width="2" data-height="2" data-priority="2">w2 h2 p2</div>
+			<div class="tile" data-width="2" data-height="2" data-priority="3">w2 h2 p3</div>
+			<div class="tile" data-width="2" data-height="2" data-priority="4">w2 h2 p4</div>
+			<div class="tile" data-width="1" data-height="2" data-priority="5">w1 h2 p5</div>
+			<div class="tile" data-width="1" data-height="2" data-priority="1">w1 h2 p1</div>
+			<div class="tile" data-width="1" data-height="3" data-priority="2">w1 h3 p2</div>
+			<div class="tile" data-width="1" data-height="3" data-priority="3">w1 h3 p3</div>
+			<div class="tile" data-width="3" data-height="3" data-priority="4">w3 h3 p4</div>
+			<div class="tile" data-width="3" data-height="3" data-priority="5">w3 h3 p5</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/jquery.tilewall.min.js"></script>
+		<script>
+			$(function() {
+				$("#tile-wall").tileWall({
+					shrinkTilesOnViewportWidthSmallerThan: 768
+				});
+			});
+		</script>
+	</body>
+</html>
