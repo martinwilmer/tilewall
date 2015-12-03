@@ -58,19 +58,19 @@ If the attribute values are out of grid size (e.g. on small viewports), they are
 
 ## Options
 
-- `debounceTime: int` min milliseconds between two resize events to refresh the
-tile positioning (*default: 100*)
+- `debounceTime: int` minimum milliseconds between two resize events to refresh the
+tile wall (*default: 100*)
 - `debug: [1|0]` enable/disable debug logging in the console (*default: 0*)
 - `hideNavTilesOnViewportWidthSmallerThan: int(px)` if > 0, hide navigation tiles on
 viewports less wide than the given pixels (*default: 0*)
-- `maxNumCols: int` the maximum number of columns the grid (*default: 12*)
-- `minNumCols: int` the minimum number of columns the grid (*default: 3*)
-- `minTileWidth: int(px)` the minimum width of a tile with `data-width="1"` (*default: 130*)
+- `maxNumCols: int` the maximum number of columns in the grid (*default: 12*)
+- `minNumCols: int` the minimum number of columns in the grid (*default: 3*)
+- `minTileWidth: int(px)` the minimum width of a tile (*default: 130*)
 - `shrinkTilesOnViewportWidthSmallerThan: int(px)` if > 0, shrink all tiles to 1x1 size on
 viewports less wide than the given pixels (*default: 0*)
 - `tileClassName: string`: class name of dom elements that shall be used as tiles
 (*default: "tile"*)
-- `tileMargin: int(px)` horizontal and vertical margin of tiles (*default: 2*)
+- `tileMargin: int(px)` horizontal and vertical css margin of tiles (*default: 2*)
 - `transition: [1|0]` enable/disable css transitions on tiles (*default: 0*)
 
 
