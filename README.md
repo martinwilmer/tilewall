@@ -79,6 +79,14 @@ viewports less wide than the given pixels (*default: 0*)
 [http://tilewall.martinwilmer.com](http://tilewall.martinwilmer.com)
 
 
+## Credits
+
+The development of this tiny plugin is a collaborative project of 
+[3undzwanzig – Agentur für Werbung und Kommunikation](http://3undzwanzig.com),  
+[Jens Wittmann](http://jens-wittmann.de) and  
+[Martin Wilmer](http://martinwilmer.com).
+
+
 ## Todo
 
 - lots of refactoring
